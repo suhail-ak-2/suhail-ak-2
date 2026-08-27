@@ -11,7 +11,7 @@
   <text x="280" y="51" text-anchor="middle" fill="#57606A" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13">suhail@github: ~/profile</text>
   <line x1="38" y1="72" x2="522" y2="72" stroke="#D0D7DE"/>
 
-  <g id="ascii-portrait" fill="#24292F" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="4.6" transform="matrix(0.453 0 0 1 148.8 0)">
+  <g id="ascii-portrait" fill="#24292F" stroke="#24292F" stroke-width="0.35" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="4.6" font-weight="700" transform="matrix(0.453 0 0 1 148.8 0)">
     <text x="148" y="80.0" xml:space="preserve">                                      ........</text>
     <text x="148" y="84.4" xml:space="preserve">                               ..:::...:::..:::.....</text>
     <text x="148" y="88.8" xml:space="preserve">                           ..:-=-::...................</text>

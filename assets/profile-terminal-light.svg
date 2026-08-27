@@ -12,7 +12,7 @@
 
   <line x1="42" y1="72" x2="1158" y2="72" stroke="#D0D7DE"/>
 
-  <g id="ascii-portrait" fill="#24292F" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="4.6" transform="matrix(0.453 0 0 1 144.4 0)">
+  <g id="ascii-portrait" fill="#24292F" stroke="#24292F" stroke-width="0.35" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="4.6" font-weight="700" transform="matrix(0.453 0 0 1 144.4 0)">
     <text x="140" y="84.0" xml:space="preserve">                                      ........</text>
     <text x="140" y="88.4" xml:space="preserve">                               ..:::...:::..:::.....</text>
     <text x="140" y="92.8" xml:space="preserve">                           ..:-=-::...................</text>

@@ -181,6 +181,33 @@ class ProfileReadmeTests(unittest.TestCase):
             ]
             self.assertEqual(light_text, dark_text)
 
+    def test_light_portraits_use_heavier_glyphs_without_changing_geometry(self):
+        for dark_path, light_path in (
+            (CARD, LIGHT_CARD),
+            (MOBILE_CARD, LIGHT_MOBILE_CARD),
+        ):
+            dark_root = ET.parse(dark_path).getroot()
+            light_root = ET.parse(light_path).getroot()
+            dark_portrait = next(
+                element for element in dark_root.iter() if element.attrib.get("id") == "ascii-portrait"
+            )
+            light_portrait = next(
+                element for element in light_root.iter() if element.attrib.get("id") == "ascii-portrait"
+            )
+
+            self.assertNotIn("font-weight", dark_portrait.attrib)
+            self.assertEqual(light_portrait.attrib.get("font-weight"), "700")
+            self.assertNotIn("stroke", dark_portrait.attrib)
+            self.assertEqual(
+                light_portrait.attrib.get("stroke"), light_portrait.attrib["fill"]
+            )
+            self.assertGreaterEqual(
+                float(light_portrait.attrib.get("stroke-width", "0")), 0.3
+            )
+            self.assertEqual(
+                light_portrait.attrib["transform"], dark_portrait.attrib["transform"]
+            )
+
     def test_repository_does_not_publish_the_source_photo(self):
         published_images = [
             path
