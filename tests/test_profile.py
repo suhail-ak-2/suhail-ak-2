@@ -89,6 +89,30 @@ class ProfileReadmeTests(unittest.TestCase):
         self.assertGreaterEqual(len(visible_rows), 28)
         self.assertGreaterEqual(len(visible_characters), 8)
 
+    def test_portrait_is_a_high_resolution_face_crop_not_a_torso_silhouette(self):
+        def portrait_rows(path):
+            root = ET.parse(path).getroot()
+            portrait = next(
+                element for element in root.iter() if element.attrib.get("id") == "ascii-portrait"
+            )
+            return [
+                "".join(element.itertext())
+                for element in portrait
+                if element.tag.endswith("text") and "".join(element.itertext()).strip()
+            ]
+
+        def span(row):
+            return len(row.rstrip()) - len(row) + len(row.lstrip())
+
+        desktop_rows = portrait_rows(CARD)
+        mobile_rows = portrait_rows(MOBILE_CARD)
+        middle_spans = [span(row) for row in desktop_rows[8:24]]
+        lower_spans = [span(row) for row in desktop_rows[-8:]]
+
+        self.assertGreaterEqual(max(len(row.rstrip()) for row in desktop_rows), 58)
+        self.assertLess(max(lower_spans), max(middle_spans))
+        self.assertEqual(desktop_rows, mobile_rows)
+
     def test_repository_does_not_publish_the_source_photo(self):
         published_images = [
             path
