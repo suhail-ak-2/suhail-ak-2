@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1135" role="img" aria-labelledby="title description">
+  <title id="title">Suhail's terminal-style GitHub profile</title>
+  <desc id="description">An ASCII portrait of Suhail above details about his work in agentic AI, MCP servers, RAG, and LLM platforms.</desc>
+
+  <rect width="560" height="1135" rx="22" fill="#0D1117"/>
+  <rect x="16" y="16" width="528" height="1103" rx="16" fill="#161B22" stroke="#30363D"/>
+
+  <circle cx="42" cy="46" r="7" fill="#FF7B72"/>
+  <circle cx="66" cy="46" r="7" fill="#E3B341"/>
+  <circle cx="90" cy="46" r="7" fill="#7EE787"/>
+  <text x="280" y="51" text-anchor="middle" fill="#8B949E" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13">suhail@github: ~/profile</text>
+  <line x1="38" y1="72" x2="522" y2="72" stroke="#30363D"/>
+
+  <g id="ascii-portrait" fill="#C9D1D9" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="11.5">
+    <text x="80" y="92" xml:space="preserve">                                                </text>
+    <text x="80" y="104" xml:space="preserve">                                                </text>
+    <text x="80" y="116" xml:space="preserve">                 .-+++++=-.                    </text>
+    <text x="80" y="128" xml:space="preserve">              .-+#%@@@@@@@%*-.                </text>
+    <text x="80" y="140" xml:space="preserve">            .-#%%@@@@@@@@@@@@-                 </text>
+    <text x="80" y="152" xml:space="preserve">           .+@@#++********@@@*                 </text>
+    <text x="80" y="164" xml:space="preserve">           :%@*::--==+++==*%@+                 </text>
+    <text x="80" y="176" xml:space="preserve">           .*%--*#*=*@@%#+=+@+..               </text>
+    <text x="80" y="188" xml:space="preserve">            .+-+%@#-+###*=--***-               </text>
+    <text x="80" y="200" xml:space="preserve">            :-::==:-+**+====+*+:               </text>
+    <text x="80" y="212" xml:space="preserve">            -=:-**+#%%%@@*+**=-  .             </text>
+    <text x="80" y="224" xml:space="preserve">            .:-=%%+=++*##**%=. .:.             </text>
+    <text x="80" y="236" xml:space="preserve">           .  .-+=:=***+*#%#=..=-.             </text>
+    <text x="80" y="248" xml:space="preserve">           ... .:-=+#%%@@%#+==+=.              </text>
+    <text x="80" y="260" xml:space="preserve">           ..... .=*%@@@#**++**.               </text>
+    <text x="80" y="272" xml:space="preserve">         ........:::-+##***++*+:..             </text>
+    <text x="80" y="284" xml:space="preserve">       ....:==+=-**--=*******=:---:.           </text>
+    <text x="80" y="296" xml:space="preserve">     .=====+++=--*@#*+******+=-:--=-:.         </text>
+    <text x="80" y="308" xml:space="preserve">    .-==-----:.=#=*%#**++**=*%#+--=---:.      </text>
+    <text x="80" y="320" xml:space="preserve">   .:-:....-::.:---:+*++==:+*==+=-------:.    </text>
+    <text x="80" y="332" xml:space="preserve">  .--:..::.-::.:..-.:*+===++=-------------:.  </text>
+    <text x="80" y="344" xml:space="preserve"> .:-:..:::.--.::..--:=+=++=-------:--=-:-=--:.</text>
+    <text x="80" y="356" xml:space="preserve">.::::...:..:-::::..---====-------:--=---==----:.</text>
+    <text x="80" y="368" xml:space="preserve">:-::.:-....:::::::.:--==--:------:-=---=+=---=-.</text>
+    <text x="80" y="380" xml:space="preserve">::::::--....::::::::-==--::-------======++--==-.</text>
+    <text x="80" y="392" xml:space="preserve">---::--=:....::::-------:::::------====+*=--==-.</text>
+    <text x="80" y="404" xml:space="preserve">-::.:--==: ..::---------::::-----====-=#*+=-==-:</text>
+    <text x="80" y="416" xml:space="preserve">:::.:---*=..::--:==-:-=-:.:-----======+%*+===--:</text>
+    <text x="80" y="428" xml:space="preserve">:::.:-=-+#:.:.:-:-=---=-::------======+%#*===--:</text>
+    <text x="80" y="440" xml:space="preserve">::.:.-===*#:.::-::----=-.:===--=======+%@+===---</text>
+    <text x="80" y="452" xml:space="preserve">::.:.:==++%=...:::----=:.-============+%@+==----</text>
+    <text x="80" y="464" xml:space="preserve">::.:::-=++*:...:::=-:-=.:-============+%%+==----</text>
+    <text x="80" y="476" xml:space="preserve">=:.:--==+*+....::--:---.:-===========+**%*+===--</text>
+    <text x="80" y="488" xml:space="preserve">-.:--====*+..::::--::=-:--=============+%%+==---</text>
+  </g>
+
+  <line x1="38" y1="516" x2="522" y2="516" stroke="#30363D"/>
+
+  <g font-family="SFMono-Regular,Consolas,Liberation Mono,monospace">
+    <text x="38" y="554" fill="#79C0FF" font-size="21" font-weight="700">Suhail @suhail-ak-2</text>
+    <line x1="282" y1="548" x2="522" y2="548" stroke="#8B949E"/>
+
+    <g font-size="18">
+      <text x="38" y="590" fill="#E3B341">OS</text>
+      <text x="188" y="590" fill="#79C0FF">macOS 27 · Apple Silicon</text>
+
+      <text x="38" y="619" fill="#E3B341">GitHub uptime</text>
+      <text x="188" y="619" fill="#79C0FF">since January 2018</text>
+
+      <text x="38" y="648" fill="#E3B341">Host</text>
+      <text x="188" y="648" fill="#79C0FF">Agentic AI Engineer</text>
+
+      <text x="38" y="677" fill="#E3B341">Focus</text>
+      <text x="188" y="677" fill="#79C0FF">MCP · RAG · LLM Platforms</text>
+
+      <text x="38" y="706" fill="#E3B341">IDE</text>
+      <text x="188" y="706" fill="#79C0FF">Codex · VS Code · Xcode</text>
+
+      <text x="38" y="735" fill="#E3B341">Shell</text>
+      <text x="188" y="735" fill="#79C0FF">zsh · GitHub Actions</text>
+    </g>
+
+    <text x="38" y="780" fill="#C9D1D9" font-size="19">Toolchain</text>
+    <line x1="144" y1="774" x2="522" y2="774" stroke="#8B949E"/>
+    <g font-size="17">
+      <text x="38" y="811" fill="#E3B341">Languages</text>
+      <text x="150" y="811" fill="#79C0FF">TypeScript · JavaScript · Shell · MDX</text>
+      <text x="38" y="838" fill="#E3B341">Builds</text>
+      <text x="150" y="838" fill="#79C0FF">AI agents · MCP servers · LLM tools</text>
+      <text x="38" y="865" fill="#E3B341">Web</text>
+      <text x="150" y="865" fill="#79C0FF">React · Next.js · Angular · Node.js</text>
+    </g>
+
+    <text x="38" y="910" fill="#C9D1D9" font-size="19">Selected work</text>
+    <line x1="178" y1="904" x2="522" y2="904" stroke="#8B949E"/>
+    <g font-size="16.5">
+      <text x="38" y="941" fill="#E3B341">LIFEOSAI</text>
+      <text x="214" y="941" fill="#79C0FF">roles, tasks &amp; accountability</text>
+      <text x="38" y="968" fill="#E3B341">Typesense MCP</text>
+      <text x="214" y="968" fill="#79C0FF">AI search bridge · 19 stars</text>
+      <text x="38" y="995" fill="#E3B341">Claude Code UI</text>
+      <text x="214" y="995" fill="#79C0FF">streaming AI coding interface</text>
+    </g>
+
+    <text x="38" y="1040" fill="#C9D1D9" font-size="19">GitHub stats</text>
+    <line x1="170" y1="1034" x2="522" y2="1034" stroke="#8B949E"/>
+    <g font-size="17">
+      <text x="38" y="1071" fill="#E3B341">Repos</text>
+      <text x="98" y="1071" fill="#79C0FF">23 public · 7 original</text>
+      <text x="38" y="1102" fill="#E3B341">Stars</text>
+      <text x="98" y="1102" fill="#7EE787">20 earned</text>
+    </g>
+  </g>
+</svg>
