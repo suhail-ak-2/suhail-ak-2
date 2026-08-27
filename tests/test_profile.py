@@ -8,14 +8,22 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 CARD = ROOT / "assets" / "profile-terminal.svg"
 MOBILE_CARD = ROOT / "assets" / "profile-terminal-mobile.svg"
+LIGHT_CARD = ROOT / "assets" / "profile-terminal-light.svg"
+LIGHT_MOBILE_CARD = ROOT / "assets" / "profile-terminal-mobile-light.svg"
 
 
 class ProfileReadmeTests(unittest.TestCase):
-    def test_readme_embeds_responsive_local_terminal_cards(self):
+    def test_readme_switches_local_cards_for_theme_and_viewport(self):
         content = README.read_text(encoding="utf-8")
 
         self.assertIn("assets/profile-terminal.svg", content)
         self.assertIn("assets/profile-terminal-mobile.svg", content)
+        self.assertIn("assets/profile-terminal-light.svg", content)
+        self.assertIn("assets/profile-terminal-mobile-light.svg", content)
+        self.assertIn("prefers-color-scheme: dark", content)
+        self.assertIn(
+            "(prefers-color-scheme: dark) and (max-width: 640px)", content
+        )
         self.assertIn('media="(max-width: 640px)"', content)
         self.assertIn("Agentic AI Engineer focused on MCP, RAG and LLM platforms", content)
         self.assertIn("23 public repos, 7 original projects and 20 stars", content)
@@ -115,6 +123,63 @@ class ProfileReadmeTests(unittest.TestCase):
         self.assertGreaterEqual(len(desktop_rows), 80)
         self.assertGreaterEqual(sum(has_two_legs(row) for row in lower_body), 18)
         self.assertEqual(desktop_rows, mobile_rows)
+
+    def test_portrait_rendering_preserves_the_approved_body_proportions(self):
+        def rendered_aspect(path):
+            root = ET.parse(path).getroot()
+            portrait = next(
+                element for element in root.iter() if element.attrib.get("id") == "ascii-portrait"
+            )
+            rows = [
+                element
+                for element in portrait
+                if element.tag.endswith("text") and "".join(element.itertext()).strip()
+            ]
+            left = min(
+                len("".join(row.itertext())) - len("".join(row.itertext()).lstrip())
+                for row in rows
+            )
+            right = max(len("".join(row.itertext()).rstrip()) for row in rows)
+            transform = portrait.attrib.get("transform", "matrix(1 0 0 1 0 0)")
+            match = re.fullmatch(
+                r"matrix\(([0-9.]+) 0 0 1 [-0-9.]+ 0\)", transform
+            )
+            self.assertIsNotNone(match)
+            scale_x = float(match.group(1))
+            font_size = float(portrait.attrib["font-size"])
+            first_y = float(rows[0].attrib["y"])
+            last_y = float(rows[-1].attrib["y"])
+            rendered_width = (right - left) * font_size * 0.6 * scale_x
+            rendered_height = last_y - first_y + font_size
+            return rendered_width / rendered_height
+
+        for path in (CARD, MOBILE_CARD):
+            self.assertAlmostEqual(rendered_aspect(path), 0.269, delta=0.035)
+
+    def test_light_cards_match_dark_content_with_a_light_palette(self):
+        for dark_path, light_path in (
+            (CARD, LIGHT_CARD),
+            (MOBILE_CARD, LIGHT_MOBILE_CARD),
+        ):
+            self.assertTrue(light_path.exists())
+            dark_root = ET.parse(dark_path).getroot()
+            light_root = ET.parse(light_path).getroot()
+            light_rects = [
+                element for element in light_root.iter() if element.tag.endswith("rect")
+            ]
+            self.assertEqual(light_rects[0].attrib["fill"], "#F6F8FA")
+            self.assertEqual(light_rects[1].attrib["fill"], "#FFFFFF")
+            dark_text = [
+                "".join(element.itertext())
+                for element in dark_root.iter()
+                if element.tag.endswith("text")
+            ]
+            light_text = [
+                "".join(element.itertext())
+                for element in light_root.iter()
+                if element.tag.endswith("text")
+            ]
+            self.assertEqual(light_text, dark_text)
 
     def test_repository_does_not_publish_the_source_photo(self):
         published_images = [

@@ -2,17 +2,17 @@
   <title id="title">Suhail's terminal-style GitHub profile</title>
   <desc id="description">A full-body ASCII portrait of Suhail beside details about his work in agentic AI, MCP servers, RAG, and LLM platforms.</desc>
 
-  <rect width="1200" height="560" rx="22" fill="#0D1117"/>
-  <rect x="18" y="18" width="1164" height="524" rx="16" fill="#161B22" stroke="#30363D"/>
+  <rect width="1200" height="560" rx="22" fill="#F6F8FA"/>
+  <rect x="18" y="18" width="1164" height="524" rx="16" fill="#FFFFFF" stroke="#D0D7DE"/>
 
-  <circle cx="48" cy="48" r="7" fill="#FF7B72"/>
-  <circle cx="72" cy="48" r="7" fill="#E3B341"/>
-  <circle cx="96" cy="48" r="7" fill="#7EE787"/>
-  <text x="600" y="53" text-anchor="middle" fill="#8B949E" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13">suhail@github: ~/profile</text>
+  <circle cx="48" cy="48" r="7" fill="#CF222E"/>
+  <circle cx="72" cy="48" r="7" fill="#9A6700"/>
+  <circle cx="96" cy="48" r="7" fill="#1A7F37"/>
+  <text x="600" y="53" text-anchor="middle" fill="#57606A" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13">suhail@github: ~/profile</text>
 
-  <line x1="42" y1="72" x2="1158" y2="72" stroke="#30363D"/>
+  <line x1="42" y1="72" x2="1158" y2="72" stroke="#D0D7DE"/>
 
-  <g id="ascii-portrait" fill="#C9D1D9" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="4.6" transform="matrix(0.453 0 0 1 144.4 0)">
+  <g id="ascii-portrait" fill="#24292F" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="4.6" transform="matrix(0.453 0 0 1 144.4 0)">
     <text x="140" y="84.0" xml:space="preserve">                                      ........</text>
     <text x="140" y="88.4" xml:space="preserve">                               ..:::...:::..:::.....</text>
     <text x="140" y="92.8" xml:space="preserve">                           ..:-=-::...................</text>
@@ -111,80 +111,80 @@
     <text x="140" y="502.0" xml:space="preserve"></text>
   </g>
 
-  <line x1="518" y1="92" x2="518" y2="520" stroke="#30363D"/>
+  <line x1="518" y1="92" x2="518" y2="520" stroke="#D0D7DE"/>
 
   <g font-family="SFMono-Regular,Consolas,Liberation Mono,monospace">
-    <text x="548" y="108" fill="#79C0FF" font-size="17" font-weight="700">Suhail @suhail-ak-2</text>
-    <line x1="760" y1="103" x2="1148" y2="103" stroke="#8B949E"/>
+    <text x="548" y="108" fill="#0969DA" font-size="17" font-weight="700">Suhail @suhail-ak-2</text>
+    <line x1="760" y1="103" x2="1148" y2="103" stroke="#57606A"/>
 
     <g font-size="14">
-      <text x="548" y="136" fill="#E3B341">OS</text>
-      <text x="680" y="136" fill="#8B949E">................</text>
-      <text x="838" y="136" fill="#79C0FF">macOS 27 · Apple Silicon</text>
+      <text x="548" y="136" fill="#9A6700">OS</text>
+      <text x="680" y="136" fill="#57606A">................</text>
+      <text x="838" y="136" fill="#0969DA">macOS 27 · Apple Silicon</text>
 
-      <text x="548" y="157" fill="#E3B341">GitHub uptime</text>
-      <text x="680" y="157" fill="#8B949E">................</text>
-      <text x="838" y="157" fill="#79C0FF">since January 2018</text>
+      <text x="548" y="157" fill="#9A6700">GitHub uptime</text>
+      <text x="680" y="157" fill="#57606A">................</text>
+      <text x="838" y="157" fill="#0969DA">since January 2018</text>
 
-      <text x="548" y="178" fill="#E3B341">Host</text>
-      <text x="680" y="178" fill="#8B949E">................</text>
-      <text x="838" y="178" fill="#79C0FF">Agentic AI Engineer</text>
+      <text x="548" y="178" fill="#9A6700">Host</text>
+      <text x="680" y="178" fill="#57606A">................</text>
+      <text x="838" y="178" fill="#0969DA">Agentic AI Engineer</text>
 
-      <text x="548" y="199" fill="#E3B341">Focus</text>
-      <text x="680" y="199" fill="#8B949E">................</text>
-      <text x="838" y="199" fill="#79C0FF">MCP · RAG · LLM Platforms</text>
+      <text x="548" y="199" fill="#9A6700">Focus</text>
+      <text x="680" y="199" fill="#57606A">................</text>
+      <text x="838" y="199" fill="#0969DA">MCP · RAG · LLM Platforms</text>
 
-      <text x="548" y="220" fill="#E3B341">IDE</text>
-      <text x="680" y="220" fill="#8B949E">................</text>
-      <text x="838" y="220" fill="#79C0FF">Codex · VS Code · Xcode</text>
+      <text x="548" y="220" fill="#9A6700">IDE</text>
+      <text x="680" y="220" fill="#57606A">................</text>
+      <text x="838" y="220" fill="#0969DA">Codex · VS Code · Xcode</text>
 
-      <text x="548" y="241" fill="#E3B341">Shell</text>
-      <text x="680" y="241" fill="#8B949E">................</text>
-      <text x="838" y="241" fill="#79C0FF">zsh · GitHub Actions</text>
+      <text x="548" y="241" fill="#9A6700">Shell</text>
+      <text x="680" y="241" fill="#57606A">................</text>
+      <text x="838" y="241" fill="#0969DA">zsh · GitHub Actions</text>
     </g>
 
-    <text x="548" y="278" fill="#C9D1D9" font-size="15">Toolchain</text>
-    <line x1="640" y1="273" x2="1148" y2="273" stroke="#8B949E"/>
+    <text x="548" y="278" fill="#24292F" font-size="15">Toolchain</text>
+    <line x1="640" y1="273" x2="1148" y2="273" stroke="#57606A"/>
 
     <g font-size="14">
-      <text x="548" y="301" fill="#E3B341">Languages</text>
-      <text x="678" y="301" fill="#79C0FF">TypeScript · JavaScript · Shell · MDX</text>
+      <text x="548" y="301" fill="#9A6700">Languages</text>
+      <text x="678" y="301" fill="#0969DA">TypeScript · JavaScript · Shell · MDX</text>
 
-      <text x="548" y="322" fill="#E3B341">Builds</text>
-      <text x="678" y="322" fill="#79C0FF">AI agents · MCP servers · LLM developer tools</text>
+      <text x="548" y="322" fill="#9A6700">Builds</text>
+      <text x="678" y="322" fill="#0969DA">AI agents · MCP servers · LLM developer tools</text>
 
-      <text x="548" y="343" fill="#E3B341">Web</text>
-      <text x="678" y="343" fill="#79C0FF">React · Next.js · Angular · Node.js</text>
+      <text x="548" y="343" fill="#9A6700">Web</text>
+      <text x="678" y="343" fill="#0969DA">React · Next.js · Angular · Node.js</text>
     </g>
 
-    <text x="548" y="380" fill="#C9D1D9" font-size="15">Selected work</text>
-    <line x1="668" y1="375" x2="1148" y2="375" stroke="#8B949E"/>
+    <text x="548" y="380" fill="#24292F" font-size="15">Selected work</text>
+    <line x1="668" y1="375" x2="1148" y2="375" stroke="#57606A"/>
 
     <g font-size="13.5">
-      <text x="548" y="403" fill="#E3B341">LIFEOSAI</text>
-      <text x="720" y="403" fill="#79C0FF">agents with roles, tasks &amp; accountability</text>
+      <text x="548" y="403" fill="#9A6700">LIFEOSAI</text>
+      <text x="720" y="403" fill="#0969DA">agents with roles, tasks &amp; accountability</text>
 
-      <text x="548" y="424" fill="#E3B341">Typesense MCP Server</text>
-      <text x="720" y="424" fill="#79C0FF">AI search bridge · 19 stars</text>
+      <text x="548" y="424" fill="#9A6700">Typesense MCP Server</text>
+      <text x="720" y="424" fill="#0969DA">AI search bridge · 19 stars</text>
 
-      <text x="548" y="445" fill="#E3B341">Claude Code UI</text>
-      <text x="720" y="445" fill="#79C0FF">streaming AI coding interface</text>
+      <text x="548" y="445" fill="#9A6700">Claude Code UI</text>
+      <text x="720" y="445" fill="#0969DA">streaming AI coding interface</text>
     </g>
 
-    <text x="548" y="482" fill="#C9D1D9" font-size="15">GitHub stats</text>
-    <line x1="660" y1="477" x2="1148" y2="477" stroke="#8B949E"/>
+    <text x="548" y="482" fill="#24292F" font-size="15">GitHub stats</text>
+    <line x1="660" y1="477" x2="1148" y2="477" stroke="#57606A"/>
 
     <g font-size="13.5">
-      <text x="548" y="505" fill="#E3B341">Public repos</text>
-      <text x="662" y="505" fill="#79C0FF">23</text>
-      <text x="718" y="505" fill="#E3B341">Original projects</text>
-      <text x="866" y="505" fill="#79C0FF">7</text>
-      <text x="918" y="505" fill="#E3B341">Stars earned</text>
-      <text x="1036" y="505" fill="#7EE787">20</text>
+      <text x="548" y="505" fill="#9A6700">Public repos</text>
+      <text x="662" y="505" fill="#0969DA">23</text>
+      <text x="718" y="505" fill="#9A6700">Original projects</text>
+      <text x="866" y="505" fill="#0969DA">7</text>
+      <text x="918" y="505" fill="#9A6700">Stars earned</text>
+      <text x="1036" y="505" fill="#1A7F37">20</text>
 
-      <text x="548" y="526" fill="#7EE787">Open to remote roles</text>
-      <text x="718" y="526" fill="#8B949E">·</text>
-      <text x="740" y="526" fill="#79C0FF">Building practical AI systems in public</text>
+      <text x="548" y="526" fill="#1A7F37">Open to remote roles</text>
+      <text x="718" y="526" fill="#57606A">·</text>
+      <text x="740" y="526" fill="#0969DA">Building practical AI systems in public</text>
     </g>
   </g>
 </svg>
