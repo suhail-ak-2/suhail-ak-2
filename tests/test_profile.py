@@ -89,28 +89,31 @@ class ProfileReadmeTests(unittest.TestCase):
         self.assertGreaterEqual(len(visible_rows), 28)
         self.assertGreaterEqual(len(visible_characters), 8)
 
-    def test_portrait_is_a_high_resolution_face_crop_not_a_torso_silhouette(self):
+    def test_portrait_is_a_pure_text_full_body_figure(self):
         def portrait_rows(path):
             root = ET.parse(path).getroot()
             portrait = next(
                 element for element in root.iter() if element.attrib.get("id") == "ascii-portrait"
             )
-            return [
+            self.assertFalse(
+                any(element.tag.endswith("image") for element in portrait.iter())
+            )
+            rows = [
                 "".join(element.itertext())
                 for element in portrait
                 if element.tag.endswith("text") and "".join(element.itertext()).strip()
             ]
+            return rows
 
-        def span(row):
-            return len(row.rstrip()) - len(row) + len(row.lstrip())
+        def has_two_legs(row):
+            return re.search(r"\S{4,}\s{3,}\S{4,}", row) is not None
 
         desktop_rows = portrait_rows(CARD)
         mobile_rows = portrait_rows(MOBILE_CARD)
-        middle_spans = [span(row) for row in desktop_rows[8:24]]
-        lower_spans = [span(row) for row in desktop_rows[-8:]]
+        lower_body = desktop_rows[int(len(desktop_rows) * 0.62) :]
 
-        self.assertGreaterEqual(max(len(row.rstrip()) for row in desktop_rows), 58)
-        self.assertLess(max(lower_spans), max(middle_spans))
+        self.assertGreaterEqual(len(desktop_rows), 80)
+        self.assertGreaterEqual(sum(has_two_legs(row) for row in lower_body), 18)
         self.assertEqual(desktop_rows, mobile_rows)
 
     def test_repository_does_not_publish_the_source_photo(self):
